@@ -1,3 +1,4 @@
+
 # Document Classification Model
 
 ## Overview
@@ -33,48 +34,51 @@ This project requires the following Python libraries:
 
    ```bash
    git clone https://github.com/Samrawitgebremaryam/Document-classification-model.git
-2. **Jupiter run**
+   ```
+
+2. **Jupyter run**
 
    Navigate to the Project Directory:
 
-bash
-Copy
-Edit
-cd document-classification-model
-Set Up a Virtual Environment:
+   ```bash
+   cd document-classification-model
+   ```
 
-bash
-Copy
-Edit
-python -m venv venv
-Activate the Virtual Environment:
+3. **Set Up a Virtual Environment:**
 
-Windows:
+   ```bash
+   python -m venv venv
+   ```
 
-bash
-Copy
-Edit
-venv\Scripts\activate
-macOS/Linux:
+4. **Activate the Virtual Environment:**
 
-bash
-Copy
-Edit
-source venv/bin/activate
+   - Windows:
 
-Model Training
+     ```bash
+     venv\Scripts\activate
+     ```
+
+   - macOS/Linux:
+
+     ```bash
+     source venv/bin/activate
+     ```
+
+## Model Training
+
 The project includes scripts to train the following models:
 
-Naive Bayes Classifier: A probabilistic model based on Bayes' theorem, commonly used for text classification tasks.
-Logistic Regression: A linear model for binary classification that can also handle multiclass problems.
-Support Vector Machine (SVM): A powerful classifier that works well for high-dimensional spaces, such as text data.
-
+- **Naive Bayes Classifier:** A probabilistic model based on Bayes' theorem, commonly used for text classification tasks.
+- **Logistic Regression:** A linear model for binary classification that can also handle multiclass problems.
+- **Support Vector Machine (SVM):** A powerful classifier that works well for high-dimensional spaces, such as text data.
 
 Each model is trained on the 20 Newsgroups dataset, and their performance is evaluated using accuracy scores and detailed classification reports.
 
-Performance Evaluation
+## Performance Evaluation
+
 After training, the models are evaluated on the test set using the following metrics:
 
-Accuracy: The proportion of correctly classified documents out of the total documents.
-Classification Report: Provides precision, recall, and F1-score for each class, offering a detailed view of the model's performance across different categories.
+- **Accuracy:** The proportion of correctly classified documents out of the total documents.
+- **Classification Report:** Provides precision, recall, and F1-score for each class, offering a detailed view of the model's performance across different categories.
+
 These metrics are crucial for understanding how well each model performs and where improvements might be needed.
